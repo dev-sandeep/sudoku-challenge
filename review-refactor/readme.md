@@ -21,6 +21,7 @@
 
 
 - How could we verify that it's always working as intended?
+
   We could write unit tests for the code, with the following tests:
   1. when a single string is passed -> we get an array with 1 element, with key being the passed string 
      eg: Input: `insuarance`, output: [`insuarance`]=>data
