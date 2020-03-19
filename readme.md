@@ -120,7 +120,7 @@ It took me around `1.5` hour to solve the program, in which the maximum time was
 * execution time is logged in the code
 
 ## Solved Program
-![solved program](./review-factor/index.js)
+![solved program](https://github.com/dev-sandeep/sudoku-challenge/blob/master/sudoku-tester/index.js)
 
 ## How to run
 > install the node server
