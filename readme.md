@@ -88,7 +88,7 @@ SELECT `authors`.`name`, AVG(`books`.`pages`) AS avg_pages FROM `authors` LEFT J
 
  ## Refactoring
 
-The refactored file is ![refactored php file](./review-factor/file-refactored.php)
+The refactored file is ![refactored php file](https://github.com/dev-sandeep/sudoku-challenge/blob/master/review-refactor/file-refactored.php)
 
 ###################################################################################################################
 
