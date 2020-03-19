@@ -123,9 +123,9 @@ It took me around `1.5` hour to solve the program, in which the maximum time was
 ![solved program](https://github.com/dev-sandeep/sudoku-challenge/blob/master/sudoku-tester/index.js)
 
 ## How to run
-> install the node server
-> come to the location of `sudoku-tested` folder with cd ./.../sudoku/tested
-> run  `node index.js`
+* install the node server
+* come to the location of `sudoku-tested` folder with `cd ./.../sudoku-tester`
+* run  `node index.js`
 
 you could change the `const input` at the top to check the program with other sudoku values
   
