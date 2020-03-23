@@ -28,7 +28,8 @@ It took me around `1.5` hour to solve the program, in which the maximum time was
 
 ## Solved Program
 ![solved program-javascript](index.js)
-![solved program-php](index.js)
+
+![solved program-php](index.php)
 
 ## How to run
 > install the node server
