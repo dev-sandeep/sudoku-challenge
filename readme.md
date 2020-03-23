@@ -123,9 +123,9 @@ It took me around `1.5` hour to solve the program, in which the maximum time was
 * execution time is logged in the code
 
 ## Solved Program
-![solved program](https://github.com/dev-sandeep/sudoku-challenge/blob/master/sudoku-tester/index.js)
+![solved program-javascript](https://github.com/dev-sandeep/sudoku-challenge/blob/master/sudoku-tester/index.js)
 
-![solved program](https://github.com/dev-sandeep/sudoku-challenge/blob/master/sudoku-tester/index.php)
+![solved program-php](https://github.com/dev-sandeep/sudoku-challenge/blob/master/sudoku-tester/index.php)
 
 ## How to run
 * install the node server
