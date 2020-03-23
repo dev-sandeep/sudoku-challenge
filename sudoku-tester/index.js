@@ -17,7 +17,7 @@
 //     [8, 5, 6, 3, 1, 9, 2, 7, 4, 6, 3, 1, 9, 2, 7, 4],
 //     [8, 5, 6, 3, 1, 9, 2, 7, 4, 6, 3, 1, 9, 2, 7, 4],
 // ];
-const input = [
+const inputData = [
     [1, 8, 2, 5, 4, 3, 6, 9, 7],
     [9, 6, 5, 1, 7, 8, 3, 4, 2],
     [7, 4, 3, 9, 6, 2, 8, 1, 5],
@@ -29,10 +29,10 @@ const input = [
     [8, 5, 6, 3, 1, 9, 2, 7, 4],
 ];
 
-const main = () => {
+const main = (data) => {
     console.time("execution-time");
 
-    if (horizontalCheck() && VerticalCheck() && blockCheck()) {
+    if (horizontalCheck(data) && VerticalCheck(data) && blockCheck(data)) {
         console.log("PERFECT SUDOKU");
         console.timeEnd("execution-time");
         return true;
@@ -42,7 +42,7 @@ const main = () => {
     return false;
 }
 
-const horizontalCheck = () => {
+const horizontalCheck = (input) => {
     var arr = {};
     for (var i = 0; i < input.length; i++) {
         for (j = 0; j < input[i].length; j++) {
@@ -61,14 +61,10 @@ const horizontalCheck = () => {
         }
     }
 
-    //simply checking if the length of the object is 9
-    if (Object.keys(arr).length == Math.pow(input.length, 2))
-        return true;
-
-    return false;
+    return checker(arr, input);
 }
 
-const VerticalCheck = () => {
+const VerticalCheck = (input) => {
     var arr = {};
     for (var i = 0; i < input.length; i++) {
         for (j = 0; j < input[i].length; j++) {
@@ -77,13 +73,10 @@ const VerticalCheck = () => {
         }
     }
 
-    if (Object.keys(arr).length == Math.pow(input.length, 2))
-        return true;
-
-    return false;
+    return checker(arr, input);
 }
 
-const blockCheck = () => {
+const blockCheck = (input) => {
     var arr = {};
     for (var i = 0; i < input.length; i++) {//traversing the block
         for (j = 0; j < input.length; j++) {//traversing the elements in the block
@@ -96,11 +89,16 @@ const blockCheck = () => {
         }
     }
 
+    return checker(arr, input);
+}
+
+const checker = (arr, input) => {
+    //simply checking if the length of the object is 9
     if (Object.keys(arr).length == Math.pow(input.length, 2))
         return true;
 
     return false;
 }
 
-main();
+main(inputData);
 
