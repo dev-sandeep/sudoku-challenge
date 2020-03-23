@@ -3,6 +3,9 @@
 As discussed in my last discusion with @Marco, he said - I could use any language of my preference, So I've used Javascript here instead of php.
 But, if you still insist to use php, I could convert the logic in to php
 
+@update: I have written the logic with php as well and it is available in 
+![solved program](https://github.com/dev-sandeep/sudoku-challenge/blob/master/sudoku-tester/index.php)
+
 ## Time and difficulties
 It took me around `1.5` hour to solve the program, in which the maximum time was consumed in coming up with a mathematical expression which would return the coordinate of an array element, when block number[0-9] and block element number is passed[0-9]
 
